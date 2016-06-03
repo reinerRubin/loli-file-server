@@ -1,11 +1,11 @@
-= Install
+# Install
 
 ```
 $ go get -u github.com/reinerRubin/loli-file-server/cmd/loli_file_server
 $ go get -u github.com/reinerRubin/loli-file-server/cmd/loli_file_client
 ```
 
-= Usage
+# Usage
 
 ```
 $ md5sum ~/Images/todo/1447547695583.jpg
@@ -41,7 +41,7 @@ $ ls /tmp/k.jpg
 
 ```
 
-= build
+# build
 ```
 $ # generate protobuf files
 $ protoc -I ./proto ./proto/service.proto  --go_out=plugins=grpc:pb
@@ -50,7 +50,7 @@ $ go build -o bin/loli-file-client ./cmd/loli_file_client/main.go
 $ go build -o bin/loli-file-server ./cmd/loli_file_server/main.go
 ```
 
-= TODO
+# TODO
 
 * Изменит контекст клиента (убрать context.Background())
 
